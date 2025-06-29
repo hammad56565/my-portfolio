@@ -6,10 +6,10 @@ import  about_profile from "../assets/about_profile.jpg"
 
 const About = () => {
   return (
-    <div id='about' className='flex flex-col md:justify-center md:items-center gap-15 mb-[20px] md:my-[70px] '>
+    <div id='about' className='flex flex-col md:justify-center max-sm:w-[90% md:items-center gap-15 mb-[20px] md:my-[70px] '>
       <Title text={'About me'} className="p-0" />
       <div className="flex gap-15 ">  
-        <img src={about_profile} className='md:w-[350px] md:block hidden  ' />
+        <img src={about_profile} className='md:w-[350px] md:block max-sm:w-[90%] hidden  ' />
         
         {/* About Right  */}
         <div className="md:w-3/5 w-[90%] flex flex-col gap-[50px]">

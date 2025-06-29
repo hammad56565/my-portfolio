@@ -6,7 +6,7 @@ import arrow_icon from '../assets/arrow_icon.svg'
 
 const MyWork = () => {
   return (
-    <div id='work' className='flex flex-col gap-12 md:gap-20  md:items-center justify-center'>
+    <div id='work' className='flex flex-col gap-12 md:gap-20 max-sm:w-[90%  md:items-center justify-center'>
       <Title text={'My latest work'} />
             <div className="grid  grid-cols-2  md:grid-cols-3  gap-[30px] md:mb-[50px] w-[90%] md:w-full">
 

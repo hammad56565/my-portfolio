@@ -30,7 +30,7 @@ const NavBar = () => {
           </a>
     </div>
     {/* MOBILE MENU  */}
-     <div className='bg-[#161513] md:hidden flex flex-col w-full max-sm:w-[90%] my-[20px] items-center justify-between'>
+     <div className='bg-[#161513] md:hidden flex flex-col w-full max-sm:w- my-[20px] items-center justify-between'>
       <div className="flex justify-between w-full relative">
         <div className="flex relative">
         <h1 className='font-bold z-2'>HAMMAD</h1>
@@ -39,10 +39,10 @@ const NavBar = () => {
       </div>
       <img onClick={()=>setMblClose('fixed')}  src={menuimg} alt="" />
        </div>
-       <div className={` z-2 fixed ${mblClose === 'hidden' ? 'hidden' : 'fixed'} top-0 right-0 w-[80%] bg-[rgb(31,_0,_22)] justify-end `}>
-        <img onClick={()=>setMblClose('hidden')} src={menuclose} alt="" className='top-[30px] right-[7px] w-[30px] absolute ' />
-          <ul  className='flex flex-col top-[15px] my-15 text-white outfit-font text-base pl-[50px] gap-[30px] items-start '>                   
-       <li className='flex  flex-row gap-5 items-center'><a href="#home"  onClick={()=>setMenu('home')} >Home  {menu === 'home' ? <img src={underline} alt="" /> : ''}  </a> </li>
+       <div className={` z-50 fixed ${mblClose === 'hidden' ? 'hidden' : 'fixed'} top-0 right-0 w-[80%] bg-[rgb(31,_0,_22)] justify-end `}>
+        <img onClick={()=>setMblClose('hidden')} src={menuclose} alt="" className='top-[30px] right-[40px] w-[30px] absolute ' />
+          <ul  className='flex flex-col top-[25px]  mt-20 mb-15 text-white outfit-font text-base pl-[50px] gap-[30px] items-start '>                   
+       <li ><a className='flex  flex-row gap-5 items-center' href="#home"  onClick={()=>setMenu('home')} >Home  {menu === 'home' ? <img src={underline} alt="" /> : ''}  </a> </li>
         <li><a className='flex  flex-row gap-5 items-center' href="#about" onClick={()=>setMenu('about')} >About me {menu === 'about' ? <img src={underline} alt="" /> : ''}   </a> </li>
         <li><a className='flex  flex-row gap-5 items-center' href="#service" onClick={()=>setMenu('service')} >Service {menu === 'service' ? <img src={underline} alt="" /> : ''}   </a> </li>
         <li  ><a href="#work" className='flex  flex-row gap-5 items-center ' onClick={()=>setMenu('work')} >Porfolio {menu === 'work' ? <img src={underline} alt="" /> : ''}   </a> </li>

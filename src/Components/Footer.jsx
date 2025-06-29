@@ -7,7 +7,7 @@ import  underline from "../assets/nav_underline.svg"
 
 const Footer = () => {
   return (
-    <div className='flex flex-col gap-[25px] w-[90%] md: my-12.5 '>
+    <div className='flex flex-col gap-[25px] max-sm:w-[90%] md: my-12.5 '>
       <div className="flex  max-md:flex-col max-md:gap-5 justify-between">
         {/* footer  left  */}
         <div className="fle flex-col">

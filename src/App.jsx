@@ -14,7 +14,7 @@ import Footer from './Components/Footer'
 
 const App = () => {
   return (
-    <div className='max-sm:mx-[5%] mx-[10%] scroll-smooth max-sm:w-full'  >
+    <div className='max-sm:mx-[5%] mx-[10%] scroll-smooth '  >
        <NavBar/>
        <Hero />
        <About/>

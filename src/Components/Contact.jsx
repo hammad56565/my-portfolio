@@ -36,7 +36,7 @@ const onSubmit = async (event) => {
 
 
   return (
-    <div id='contact' className='md:items-center justify-center  flex flex-col gap-20 mt-[70px] md:my-[70px]'>
+    <div id='contact' className='md:items-center justify-center  flex flex-col gap-20 max-sm:w-[90% mt-[70px] md:my-[70px]'>
       <Title text={'Get in touch'} />
       {/* Content OF Contact  */}
       <div className="flex gap-[30px] max-md:flex-col w-[90%] md:w-full justify-between ">

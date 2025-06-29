@@ -5,9 +5,9 @@ import arrow_icon from '../assets/arrow_icon.svg'
 
 const MyServices = () => {
   return (
-    <div id='service' className='md:items-center justify-center flex flex-col gap-20 mb-[20px] md:my-[70px]'>
+    <div id='service' className='md:items-center justify-center flex flex-col max-sm:w-[90% gap-20 mb-[20px] md:my-[70px]'>
       <Title  text={'My Services'} />
-      <div className="grid  grid-cols-2  md:grid-cols-3 gap-[20px] md:gap-[30px] mb-[50px] w-[90%] md:w-full">
+      <div className="grid  grid-cols-2  md:grid-cols-3 gap-[20px] md:gap-[30px] mb-[50px] w-[90% md:w-full">
       {service_data.map((services,index)=>{
           return <div key={index} className='flex flex-col grow w-full min-w-0 gap-[10px] p-[20px] md:p-[30px] border-2 border-white rounded-[10px] cursor-pointer transition duration-400 transform hover:border-[#ff00ff] hover:scale-105  hover:bg-[linear-gradient(45deg,_#3f0028,_#582300)] '>
                    <h1 className="font-semibold text-[22px] ">{services.s_no} </h1>

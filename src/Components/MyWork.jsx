@@ -11,8 +11,8 @@ const MyWork = () => {
             <div className="grid  grid-cols-2  md:grid-cols-3  gap-[30px] md:mb-[50px] w-[90%] md:w-full">
 
       {mywork_data.map((services,index)=>{
-                return <div key={index} className=' w-full min-w-0 gap-[10px] max-sm:mt-[10px]  rounded-[10px] cursor-pointer transition duration-300 transform hover:scale-103 hover:border-4 hover:border-[#ff00ff]     '>
-                        <img src={services.w_img} alt="" />
+                return <div key={index}  className=' w-full min-w-0 gap-[10px] max-sm:mt-[10px]  rounded-[10px] cursor-pointer transition duration-300 transform hover:scale-103 hover:border-4 hover:border-[#ff00ff]     '>
+                        <img src={services.w_img} onClick={()=>services.w_link && window.open(services.w_link) } alt="" />
                 </div>
       })
       

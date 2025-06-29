@@ -14,7 +14,11 @@ const NavBar = () => {
     <div className="z-0"> 
     {/* DESKTOP MENU  */}
     <div className='bg-[#161513] hidden md:flex  flex mx-[10%] my-[20px] items-center justify-between'>
-       <img src={logo} alt="" />
+      <div className="flex relative">
+        <h1 className='font-bold z-2'>HAMMAD</h1>
+       <img src={underline} className='absolute top-3 z-0 left-11' alt="" />
+
+      </div>
        <ul className='flex text-white outfit-font text-base gap-10 items-center '>                   
        <li className='flex flex-col items-center'><a href="#home"  onClick={()=>setMenu('home')} >Home  {menu === 'home' ? <img src={underline} alt="" /> : ''}  </a> </li>
         <li><a className='flex flex-col items-center' href="#about" onClick={()=>setMenu('about')} >About me {menu === 'about' ? <img src={underline} alt="" /> : ''}   </a> </li>
@@ -28,7 +32,11 @@ const NavBar = () => {
     {/* MOBILE MENU  */}
      <div className='bg-[#161513] md:hidden flex flex-col w-full max-sm:w-[90%] my-[20px] items-center justify-between'>
       <div className="flex justify-between w-full relative">
-       <img src={logo} alt="" />
+        <div className="flex relative">
+        <h1 className='font-bold z-2'>HAMMAD</h1>
+       <img src={underline} className='absolute top-3 z-0 left-11' alt="" />
+
+      </div>
       <img onClick={()=>setMblClose('fixed')}  src={menuimg} alt="" />
        </div>
        <div className={` z-2 fixed ${mblClose === 'hidden' ? 'hidden' : 'fixed'} top-0 right-0 w-[80%] bg-[rgb(31,_0,_22)] justify-end `}>

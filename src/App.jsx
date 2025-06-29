@@ -30,7 +30,7 @@ const App = () => {
         newestOnTop={false}
         closeOnClick
         pauseOnHover
-        theme="dark"
+        theme="light"
       />
     </div>
   )

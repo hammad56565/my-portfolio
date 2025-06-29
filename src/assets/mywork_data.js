@@ -9,12 +9,15 @@ const mywork_data = [
     {
         w_no:1,
         w_name:"Web design",
-        w_img:project1_img
+        w_img:project1_img,
+        w_link:'https://buyitt-xi.vercel.app/'
     },
     {
         w_no:2,
         w_name:"Web design",
-        w_img:project2_img
+        w_img:project2_img,
+      w_link:'https://travel-agency-dashboard-teal.vercel.app/sign-in'
+
     },
     {
         w_no:3,

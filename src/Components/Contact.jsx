@@ -30,7 +30,7 @@ const onSubmit = async (event) => {
 
     if (res.success) {
       console.log("Success", res);
-      //  toast.error("🎉 Wow so easy!");
+       toast.success(`🎉${res.data.name.toUpperCase()} Mail Recieved`);
     }
   };
 
@@ -47,11 +47,11 @@ const onSubmit = async (event) => {
            <div className="text-[#d8d8d8] text-[22px] gap-[25px] flex flex-col ">
             <div className="flex items-center gap-[18px]">
                 <img src={mail_icon} alt="" />
-                <p className="text-[#d8d8d8] text-base max-w-[550px]">greatstackdev@gmail.com</p>
+                <p className="text-[#d8d8d8] text-base max-w-[550px]">mhammad936666@gmail.com</p>
             </div>
             <div className="flex items-center gap-[18px]">
                 <img src={call_icon} alt="" />
-                <p className="text-[#d8d8d8] text-base max-w-[550px]">+772-825-524m</p>
+                <p className="text-[#d8d8d8] text-base max-w-[550px]">+000-000-000</p>
             </div>
             <div className="flex items-center gap-[18px]">
                 <img src={location_icon} alt="" />

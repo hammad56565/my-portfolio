@@ -1,18 +1,18 @@
 import React from 'react'
 import Title from './Title'
-import  about_profile from "../assets/about_profile.svg"
+import  about_profile from "../assets/about_profile.jpg"
 
 
 
 const About = () => {
   return (
-    <div id='about' className='flex flex-col justify-center items-center gap-15 my-[70px] '>
-      <Title text={'About me'} />
+    <div id='about' className='flex flex-col md:justify-center md:items-center gap-15 mb-[20px] md:my-[70px] '>
+      <Title text={'About me'} className="p-0" />
       <div className="flex gap-15 ">  
-        <img src={about_profile} className='w-[300px]' />
+        <img src={about_profile} className='md:w-[350px] md:block hidden  ' />
         
         {/* About Right  */}
-        <div className="w-3/5 flex flex-col gap-[50px]">
+        <div className="md:w-3/5 w-[90%] flex flex-col gap-[50px]">
             <div className="flex flex-col gap-[15px] text-lg font-medium">
                 <p>I am an experienced Frontend Developer with over a decade of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.</p>
              <p>My passion for frontend development is not only reflected in my extensive experience but also in the enthusiasm and dedication I bring to each project.</p>
@@ -39,23 +39,23 @@ const About = () => {
         </div>
       </div>
       {/* ABOUT ACHIEVMENTS  */}
-      <div className="flex justify-around mb-[50px] w-full">
+      <div className="flex justify-around mb-[50px] w-[90%] md:w-full">
            {/* no 1  */}
            <div className="flex flex-col items-center">
-            <h1 className='font-bold text-[40px] bg-[linear-gradient(267deg,_#DA7C25_0.36%,_#B923E1_102.06%)] bg-clip-text text-transparent'>10+</h1>
-              <p className='text-lg font-medium'>Years Of Experience</p>
+            <h1 className='font-bold text-[28px] md:text-[40px] bg-[linear-gradient(267deg,_#DA7C25_0.36%,_#B923E1_102.06%)] bg-clip-text text-transparent'>10+</h1>
+              <p className='text-lg text-center text-sm font-medium'>Years Of Experience</p>
            </div>
            <div className='bg-white h-auto w-[1px]'  />
            {/* no 1  */}
            <div className="flex flex-col items-center">
-            <h1 className='font-bold text-[40px] bg-[linear-gradient(267deg,_#DA7C25_0.36%,_#B923E1_102.06%)] bg-clip-text text-transparent'>90+</h1>
-              <p className='text-lg font-medium'> PROJECTS COMPLETED</p>
+            <h1 className='font-bold text-[28px] md:text-[40px] bg-[linear-gradient(267deg,_#DA7C25_0.36%,_#B923E1_102.06%)] bg-clip-text text-transparent'>90+</h1>
+              <p className='text-lg text-center text-sm font-medium'> PROJECTS COMPLETED</p>
            </div>
            <div className='bg-white h-auto w-[1px]'  />
            {/* no 1  */}
            <div className="flex flex-col items-center">
-            <h1 className='font-bold text-[40px] bg-[linear-gradient(267deg,_#DA7C25_0.36%,_#B923E1_102.06%)] bg-clip-text text-transparent'>15+</h1>
-              <p className='text-lg font-medium'>HAPPY CLIENTS</p>
+            <h1 className='font-bold text-[28px] md:text-[40px] bg-[linear-gradient(267deg,_#DA7C25_0.36%,_#B923E1_102.06%)] bg-clip-text text-transparent'>15+</h1>
+              <p className='text-lg text-center text-sm font-medium'>HAPPY CLIENTS</p>
            </div> 
       </div>
     </div>
